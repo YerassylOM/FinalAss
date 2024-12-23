@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект Алаш-01 - Бұйрық</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('Ass.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #003366;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        #chat-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: 500px;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        #input-container {
+            display: flex;
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        #user-input {
+            width: 85%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        #send-btn {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #send-btn:hover {
+            background-color: #0056b3;
+        }
+
+        #buttons-container {
+            position: fixed;
+            left: 20px;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .button-link {
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+
+        .button-link:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проект Алаш-01 - Бұйрық</h1>
+
+    <div id="chat-container">
+        <!-- Сообщения будут добавлены здесь -->
+    </div>
+
+    <div id="input-container">
+        <input type="text" id="user-input" placeholder="Введите вопрос..." />
+        <button id="send-btn">Отправить</button>
+    </div>
+
+    <div id="buttons-container">
+        <a href="https://adilet.zan.kz/kaz/docs/Z1100000477" target="_blank" class="button-link">Қазақстан Республикасының көші-қон туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z010000211_" target="_blank" class="button-link">Қазақстан Республикасындағы туристік қызмет туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/K1400000235" target="_blank" class="button-link">Әкімшілік құқық бұзушылық туралы Кодекс</a>
+        <a href="https://adilet.zan.kz/kaz/docs/K1400000226" target="_blank" class="button-link">Қазақстан Республикасының Қылмыстық кодексі</a>
+        <a href="https://adilet.zan.kz/kaz/docs/P970001650_" target="_blank" class="button-link">Жол қозғалысы туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/K2000000360" target="_blank" class="button-link">Халық денсаулығы және денсаулық сақтау жүйесі туралы Кодекс</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z970000151_" target="_blank" class="button-link">Тіл туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z990000493_" target="_blank" class="button-link">Еңбек туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z970000094_/links" target="_blank" class="button-link">Тұрғын үй қатынастары туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z100000274_" target="_blank" class="button-link">Тұтынушылардың құқықтарын қорғау туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/V2100023952" target="_blank" class="button-link">Қаржы мониторингі туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z1800000167" target="_blank" class="button-link">Валюталық реттеу туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z040000567_" target="_blank" class="button-link">Байланыс туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z060000207_/links" target="_blank" class="button-link">Мәдениет туралы Заңы</a>
+        <a href="https://adilet.zan.kz/kaz/docs/K2300000224" target="_blank" class="button-link">Әлеуметтік кодекс</a>
+        <a href="https://adilet.zan.kz/kaz/docs/K2100000400" target="_blank" class="button-link">Экологиялық кодекс</a>
+        <a href="https://www.gov.kz/memleket/entities/economy/documents/details/696423?lang=kk" target="_blank" class="button-link">Салық кодексі</a>
+        <a href="https://adilet.zan.kz/kaz/docs/Z1300000070" target="_blank" class="button-link">Мемлекеттік шекара туралы Заңы</a>
+    </div>
+
+    <script>
+        const sendButton = document.getElementById('send-btn');
+        const userInput = document.getElementById('user-input');
+        const chatContainer = document.getElementById('chat-container');
+
+        // Функция для отображения сообщений в чате
+        function displayMessage(message, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            messageDiv.textContent = message;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        sendButton.addEventListener('click', () => {
+            const userMessage = userInput.value.trim();
+            if (userMessage === '') return;
+
+            // Отображаем сообщение пользователя
+            displayMessage(userMessage, 'user-message');
+
+            // Очищаем поле ввода
+            userInput.value = '';
+
+            // Перенаправляем в Google с запросом
+            const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(userMessage)}`;
+            window.open(googleSearchUrl, '_blank');
+        });
+    </script>
+</body>
+</html>

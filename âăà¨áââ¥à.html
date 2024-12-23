@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            background-image: url('Суреттеу.jpg'); /* Фон суреті */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: rgba(34, 34, 34, 0.8); /* Фонды қараңғылау үшін */
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+            padding: 5rem 0;
+        }
+
+        .services, .contact {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact label {
+            margin-top: 1rem;
+        }
+
+        .contact input, .contact textarea, .contact button {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .footer {
+            background-color: rgba(34, 34, 34, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .btn {
+            background-color: #ff6347;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Alash caйт</h1>
+            <nav class="nav">
+                <a href="#home">Басты бет</a>
+                <a href="file:///C:/Users/Admin/Desktop/Assignments/index.html#">Тестілеу</a>
+                <a href="file:///C:/Users/Admin/Desktop/%D1%81%D0%B0%D0%B9%D0%B8%D1%82%D1%82%D0%B0%D0%B0%D1%83/index.html">Бабтар</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Біздің сайтқа қош келдіңіз!</h2>
+            <p>Таңғажайып контентті ашып, қызметтерімізді зерттеңіз.</p>
+            <a href="#services" class="btn">Қызметтерді көру</a>
+        </div>
+        <video autoplay loop muted class="hero-video">
+            <source src="video.mp4" type="video/mp4">
+            Сіздің браузеріңіз бұл видеоны қолдамайды.
+        </video>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Біздің қызметтер</h2>
+            <ul>
+                <li>Туристерге көмек</li>
+                <li>Заңнамалар жинағы</li>
+                <li>Тестілеу</li>
+                <li>Іздеуші</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Байланысу</h2>
+            <form action="#" method="post">
+                <label for="name">Атыңыз:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Электрондық пошта:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Хабарлама:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Жіберу</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Менің сайтым. Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>
